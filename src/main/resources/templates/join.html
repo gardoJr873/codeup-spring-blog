@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="https:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Join</title>
+</head>
+<body>
+  <h1 th:text="${frank}">Hello</h1>
+    <h1>Hello World of JSP @Controllers</h1>
+  <form action="join.html" method="post">
+    <input type="text" name="cohort" id="cohort-ip" class="field"/>
+    <button>Join Now</button>
+  </form>
+
+  <br>
+
+    <div th:each="item: ${shoppingCart}">
+        <p th:text="${item.name}">Pills</p>
+        <p>Popping</p>
+    </div>
+
+</body>
+</html>
